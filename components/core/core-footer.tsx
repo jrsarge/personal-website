@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function CoreFooter() {
 	return (
-		<footer className="container">
+		<footer className="container mx-auto">
 			<Separator/>
 			<div className=" py-12 mx-auto overflow-hidden max-w-7xl ">
 				<p className="mt-8 text-center">
