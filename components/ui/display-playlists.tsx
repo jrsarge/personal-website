@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react'
-import { GridSkeleton } from "@/components/interface/grid-block";
+import { GridSkeleton } from "@/components/ui/grid-block";
 import Image from 'next/image';
 import AppleMusicLogo from "@/public/core/apple-music.svg";
 import SpotifyLogo from "@/public/core/spotify.svg";
