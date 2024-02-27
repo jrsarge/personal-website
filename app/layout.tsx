@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Merriweather_Sans } from "next/font/google";
 import "@/styles/globals.css";
 
+import CoreFooter from "@/components/core/core-footer";
+
 const coreFont = Merriweather_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={coreFont.className}>{children}</body>
+      <body className={coreFont.className}>
+        {children}
+        <CoreFooter />
+      </body>
     </html>
   );
 }
