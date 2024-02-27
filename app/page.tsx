@@ -1,113 +1,126 @@
-import Image from "next/image";
+"use client"
+// Import Images
+import Image, { StaticImageData } from "next/image";
+import ImageAF_3_2 from "@/public/home/andrew-fisher-3-2.jpg";
+import ImageAF_5_4 from "@/public/home/andrew-fisher-5-4.jpg";
+import Folsom from "@/public/home/folsom.jpg";
+import LaLaLand from "@/public/home/movies/lalaland.jpg";
+import WalterMitty from "@/public/home/movies/waltermitty.jpg"
+import SpiderMan from "@/public/home/movies/spiderman.jpg";
+import Utah from "@/public/home/alpine-loop.jpg";
+import HBLL from "@/public/home/hbll.jpg";
+import Philippines from "@/public/home/philippines.jpg";
+// Import Components
+import Separator from "@/components/ui/separator";
+import GridBlock from "@/components/ui/grid-block";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+// Declare Content
+const places: { title?: string; caption?: string; mdcol: number; lgcol: number; items: { title?: string; content?: string; image: { src: StaticImageData; alt: string } }[]} = {
+    mdcol: 2,
+    lgcol: 4,
+    items: [
+        {
+            title: "Folsom",
+            content: "I grew up in Folsom, California.    It was a great place to grow up with tons of friendly people and opportunities for me as a youth",
+            image: {
+                src: Folsom,
+                alt: "Rainbow Bridge, Folsom CA"
+            }
+        },
+        {
+            title: "Philippines",
+            content: "I served a mission for The Church of Jesus Christ of Latter-day Saints in Isabela Philippines.    The people of the Philippines are the most friendly, kind and amazing people on Earth.",
+            image: {
+                src: Philippines,
+                alt: "Corn Field, Echague Philippines"
+            }
+        },
+        {
+            title: "BYU",
+            content: "I'm currently studying at BYU.    I love learning in such a spiritual environment and I've made lifelong friends during my time here.",
+            image: {
+                src: HBLL,
+                alt: "HBLL Library at BYU"
+            }
+        },
+        {
+            title: "Utah",
+            content: "I'm lucky to live in Utah, its such a pretty place with so much to do.",
+            image: {
+                src: Utah,
+                alt: "Autumn leaves in Alpine Loop, Provo Canyon"
+            }
+        }
+    ]
 }
+
+const movies: { title?: string; caption?: string; mdcol: number; lgcol: number; items: { title?: string; content?: string; image: { src: StaticImageData; alt: string } }[]} = {
+    title: "My Favorite Movies",
+    caption: "These movies definitely aren't similar but I love each of them and rewatch them often",
+    mdcol: 1,
+    lgcol: 3,
+    items: [
+        {
+            image: {
+                src: LaLaLand,
+                alt: "La La Land Movie Poster"
+            }
+        },
+        {
+            image: {
+                src: WalterMitty,
+                alt: "The Secret Life of Walter Mitty Movie Poster"
+            }
+        },
+        {
+            image: {
+                src: SpiderMan,
+                alt: "Spider Man: Into the Spiderverse Movie Poster"
+            }
+        },
+    ]
+}
+
+// Hero Header
+function HeroBlock() {
+    return (
+        <section className="mx-auto container">
+            <div className="flex flex-col lg:flex-row justify-center items-stretch">
+                <div id="img block" className="mt-6 md:mt-8 lg:mt-0 lg:w-8/12 ">
+                    <div className="relative w-full h-full">
+                            <Image src={ ImageAF_3_2 } alt="Picture of Andrew Fisher" className="w-full h-full relative hidden lg:block rounded" />
+                            <Image src={ ImageAF_5_4 } alt="Picture of Andrew Fisher" className="md:mx-auto w-full h-full lg:hidden rounded" />
+                    </div>
+                </div>
+                <div id="text block" className="flex justify-center items-center order-first md:mx-auto md:w-11/12 md:mt-12 lg:w-5/12 lg:px-6 lg:order-none">
+                    <div>
+                        <h1 className=" dark:text-white text-4xl md:text-5xl xl:text-6xl font-semibold text-gray-900 w-10/12">
+                                I'm Andrew!
+                        </h1>
+                        <p className="dark:text-gray-300 md:w-10/12 lg:w-11/12 xl:w-10/12 mt-4 lg:mt-5 text-base leading-normal text-gray-600">
+                                I'm a Master of Information Systems Managment Student at BYU interested in software development.    I love serving and getting to know people and using technology to create powerful solutions.    I love music and music history and am an avid cook and baker.    Thanks for visiting my site!     
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+// Content
+export default function Home() {
+    return (
+        <main> 
+            <HeroBlock />
+            <Separator />
+            <h1 className="container mx-auto font-semibold md:py-6 lg:py-3 text-center text-3xl md:text-4xl xl:text-5xl">
+                About Me
+            </h1>
+            <GridBlock components={places} />
+            <GridBlock components={movies} />
+        </main>
+    );
+}
+
+
+
