@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Separator } from "@/components/ui/separator";
+import Separator from "@/components/ui/separator";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -81,7 +81,7 @@ export default function MusicDisplay({ index, components }: MusicBlockProps) {
                         </>
                     ) }
                 </div>
-                <Separator className="lg:hidden my-2 w-9/12" />
+                <Separator />
                 <div className="font-light w-10/12 lg:w-7/12 mx-auto flex items-center justify-center gap-2 flex-col lg:flex-col-reverse">
                     <div className="">
                         { components.type === "Artist" && (
