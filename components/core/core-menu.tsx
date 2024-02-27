@@ -99,6 +99,15 @@ export function CoreMenu() {
     return (
         <>
             <header id='site-menu' className="sticky top-0 w-full flex items-center h-20 border-b border-b-gray-100 dark:border-b-gray-900 z-40 bg-white dark:bg-gray-950/80 backdrop-filter backdrop-blur-xl">
+            <style jsx>{`
+                details summary::-webkit-details-marker {
+                display: none;
+                }
+
+                summary {
+                list-style: none;
+                }
+            `}</style>
                 <nav className=" container relative mx-auto w-full flex gap-x-5 justify-between lg:justify-start items-center">
                     <div className='flex items-center w-96 max-w-fit '>
                         <Link onClick={closeNavbar} href="/" passHref className={ LogoStyles }>
