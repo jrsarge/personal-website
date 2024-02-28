@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import NotionPreview from "@/components/interface/notion-preview";
+import NotionPreview from "@/components/ui/notion-preview";
 import articles from "@/app/development/articles.json";
-import PageTitle from "@/components/interface/page-title";
+import PageTitle from "@/components/ui/page-title";
 
 const title: { title: string; subtitle?: string } = {
     title: "My Software Projects",
