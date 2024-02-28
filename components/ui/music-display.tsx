@@ -3,8 +3,8 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import Link from "next/link";
 
-import AppleMusicLogo from "@/public/music/apple-music.svg"
-import SpotifyLogo from "@/public/music/apple-music.svg"
+import AppleMusicLogo from "@/public/music/apple-music.svg";
+import SpotifyLogo from "@/public/music/spotify.svg";
 
 
 interface MusicBlock {
