@@ -11,7 +11,7 @@ import Utah from "@/public/home/alpine-loop.jpg";
 import HBLL from "@/public/home/hbll.jpg";
 import Philippines from "@/public/home/philippines.jpg";
 // Import Components
-import Separator from "@/components/ui/separator";
+import { Separator } from "@/components/ui/separator";
 import GridBlock from "@/components/ui/grid-block";
 
 // Declare Content
@@ -112,7 +112,7 @@ export default function Home() {
     return (
         <main> 
             <HeroBlock />
-            <Separator />
+            <Separator className="container w-9/12 my-9" />
             <h1 className="container font-semibold md:py-6 lg:py-3 text-center text-3xl md:text-4xl xl:text-5xl">
                 About Me
             </h1>

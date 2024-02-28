@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Separator from "@/components/ui/separator";
+import Separator from "@/components/ui/xseparator";
 import Image from "next/image";
 import Link from "next/link";
 
