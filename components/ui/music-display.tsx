@@ -3,8 +3,9 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import Link from "next/link";
 
-import AppleMusicLogo from "@/public/core/apple-music.svg";
-import SpotifyLogo from "@/public/core/spotify.svg";
+import AppleMusicLogo from "@/public/music/apple-music.svg"
+import SpotifyLogo from "@/public/music/apple-music.svg"
+
 
 interface MusicBlock {
     title: string;
@@ -81,7 +82,7 @@ export default function MusicDisplay({ index, components }: MusicBlockProps) {
                         </>
                     ) }
                 </div>
-                <Separator />
+                <Separator className="lg:hidden my-2 w-9/12" />
                 <div className="font-light w-10/12 lg:w-7/12 mx-auto flex items-center justify-center gap-2 flex-col lg:flex-col-reverse">
                     <div className="">
                         { components.type === "Artist" && (
