@@ -84,7 +84,7 @@ const movies: { title?: string; caption?: string; mdcol: number; lgcol: number; 
 // Hero Header
 function HeroBlock() {
     return (
-        <section className="mx-auto container">
+        <section className="container">
             <div className="flex flex-col lg:flex-row justify-center items-stretch">
                 <div id="img block" className="mt-6 md:mt-8 lg:mt-0 lg:w-8/12 ">
                     <div className="relative w-full h-full">
@@ -113,7 +113,7 @@ export default function Home() {
         <main> 
             <HeroBlock />
             <Separator />
-            <h1 className="container mx-auto font-semibold md:py-6 lg:py-3 text-center text-3xl md:text-4xl xl:text-5xl">
+            <h1 className="container font-semibold md:py-6 lg:py-3 text-center text-3xl md:text-4xl xl:text-5xl">
                 About Me
             </h1>
             <GridBlock components={places} />
