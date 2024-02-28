@@ -1,4 +1,4 @@
-import Separator from "@/components/ui/xseparator"
+import { Separator } from "./separator";
 interface Components {
         title: string;
         subtitle?: string;
