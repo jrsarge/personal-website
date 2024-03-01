@@ -7,7 +7,7 @@ export default function ArtistPage() {
 	return (
 		<main>
 			{ content.map((artist, index) => (
-				<MusicDisplay key={ artist.title } index={ index } components={ artist } />
+				<MusicDisplay key={ artist.name } index={ index } components={ artist } />
 			)) }
 		</main>
 	);

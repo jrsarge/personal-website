@@ -8,7 +8,7 @@ import SpotifyLogo from "@/public/music/spotify.svg";
 
 
 interface MusicBlock {
-    title: string;
+    name: string;
     content: string[];
     type: string;
     tags: {
@@ -62,7 +62,7 @@ export default function MusicDisplay({ index, components }: MusicBlockProps) {
 
     return (
         <div className="flex items-center justify-center flex-col gap-4 p-4 lg:p-6 w-10/12 mx-auto border rounded-md mb-3">
-            <h1 className="w-full mx-auto text-center text-2xl font-medium">{ components.title }</h1>
+            <h1 className="w-full mx-auto text-center text-2xl font-medium">{ components.name }</h1>
             <Separator />
             <div className={`w-full mx-auto flex items-center justify-center gap-2 flex-col ${largeDirection}`}>
                 <div className="w-full lg:w-4/12 mx-auto flex items-center justify-center gap-2 lg:gap-3 flex-col">

@@ -1,28 +1,59 @@
 [
-    {
-      "title": "The Beatles",
-      "content": [
-        "The greatest band ever. Their first albums were immensely popular, building on the foundations of Chuck Berry and Elvis. Rubber Soul and Revolver moved them from pop boy band to expert songwriters with radical use of the studio. Sgt. Pepper's Lonely Hearst Club Band proved their creative genius and transformed modern music making indescribable ways."
-       ],
-      "type": "Artist",
-      "tags": [
-        {
-          "title": "Favorite Tracks:",
-          "content": "The End, Let it Be, Drive My Car"
-        },
-        {
-          "title": "Favorite Albums:",
-          "content": "Abbey Road, Rubber Soul"
-        }
-      ],
-      "links": {
-        "appleURI": "the-beatles/136975",
-        "spotifyURI": "3WrFJ7ztbogyGnTHbHJFl2"
-      },
-      "image": {
-        "src": "/music/artists/the-beatles.jpeg",
-        "alt": "The Beatles"
-      }
-    }
-  ]
-  
+	{
+		"id": 1,
+		"tier": 1,
+		"rank": 1,
+		"name": "Coldplay",
+		"content": [
+			"My favorite band, their discography is the soundtrack to my life. I've reviewed every one of their albums on my Coldplay page."
+			],
+		"type": "Artist",
+		"tags": [
+			{
+				"title": "Favorite Tracks:",
+				"content": "Up&Up, Coloratura, Yellow"
+			},
+			{
+				"title": "Favorite Albums:",
+				"content": "A Head Full of Dreams, "
+			}
+		],
+		"links": {
+			"appleURI": "the-beatles/136975",
+			"spotifyURI": "3WrFJ7ztbogyGnTHbHJFl2"
+		},
+		"image": {
+			"src": "/music/artists/the-beatles.jpeg",
+			"alt": "The Beatles"
+		}
+	},
+	{
+		"id": 2,
+		"tier": 1,
+		"rank": 2,
+		"name": "The Beatles",
+		"content": [
+			"The greatest band ever. Their first albums were immensely popular, building on the foundations of Chuck Berry and Elvis. Rubber Soul and Revolver moved them from pop boy band to expert songwriters with radical use of the studio. Sgt. Pepper's Lonely Hearst Club Band proved their creative genius and transformed modern music making indescribable ways."
+			],
+		"type": "Artist",
+		"tags": [
+			{
+				"title": "Favorite Tracks:",
+				"content": "The End, Let it Be, Drive My Car"
+			},
+			{
+				"title": "Favorite Albums:",
+				"content": "Abbey Road, Rubber Soul"
+			}
+		],
+		"links": {
+			"appleURI": "the-beatles/136975",
+			"spotifyURI": "3WrFJ7ztbogyGnTHbHJFl2"
+		},
+		"image": {
+			"src": "/music/artists/the-beatles.jpeg",
+			"alt": "The Beatles"
+		}
+	}
+]
+    
