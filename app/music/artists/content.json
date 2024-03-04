@@ -15,16 +15,16 @@
 			},
 			{
 				"title": "Favorite Albums:",
-				"content": "A Head Full of Dreams, "
+				"content": "A Head Full of Dreams, X&Y, Parachutes"
 			}
 		],
 		"links": {
-			"appleURI": "the-beatles/136975",
-			"spotifyURI": "3WrFJ7ztbogyGnTHbHJFl2"
+			"appleURI": "coldplay/471744",
+			"spotifyURI": "4gzpq5DPGxSnKTe4SA8HAU"
 		},
 		"image": {
-			"src": "/music/artists/the-beatles.jpeg",
-			"alt": "The Beatles"
+			"src": "/music/artists/coldplay.jpeg",
+			"alt": "Coldplay"
 		}
 	},
 	{
