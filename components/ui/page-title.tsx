@@ -12,8 +12,8 @@ interface PageTitleProps {
 export default function PageTitle({ components }: PageTitleProps) {
     const center = components.center ? "text-center" : "";
 	return(
-		<div className="container">
-			<h1 className="mx-auto text-center dark:text-white text-3xl md:text-4xl xl:text-5xl font-medium text-gray-900 w-10/12">
+		<div className="container my-5">
+			<h1 className="mx-auto text-center  dark:text-white text-3xl md:text-4xl xl:text-5xl font-medium text-gray-900 w-10/12">
 				{ components.title }
 			</h1>
 				{ components.subtitle && (
