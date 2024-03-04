@@ -9,7 +9,7 @@ export default function ColdplayPage() {
 		<main>
 			<section className="container">
 				{ content.map((album, index) => (
-					<MusicDisplay key={ album.title } index={ index } components={ album } />
+					<MusicDisplay key={ album.id } index={ index } components={ album } />
 				)) }
 				<br />
 			</section>
