@@ -14,7 +14,7 @@ export default function ArtistPage() {
 		<main>
 			<PageTitle components={ title } />
 			{ content.map((artist, index) => (
-				<MusicDisplay key={ artist.id } index={ index } components={ artist } />
+				<MusicDisplay key={ artist.name } index={ index } components={ artist } />
 			)) }
 		</main>
 	);

@@ -15,7 +15,7 @@ interface MusicBlock {
         title: string;
         content: string;
     }[];
-    links: {
+    link: {
         appleURI: string;
         spotifyURI: string;
     }
@@ -34,15 +34,15 @@ export default function MusicDisplay({ index, components }: MusicBlockProps) {
     // Build Links
     let apple: string;
     if (components.type === "Artist") {
-        apple = `https://music.apple.com/us/artist/${ components.links.appleURI }`  
+        apple = `https://music.apple.com/us/artist/${ components.link.appleURI }`  
     } else {
-        apple = `https://music.apple.com/us/album/${ components.links.appleURI }`
+        apple = `https://music.apple.com/us/album/${ components.link.appleURI }`
     }
     let spotify: string;
     if (components.type === "Artist") {
-        spotify = `https://open.spotify.com/artist/${components.links.spotifyURI}`
+        spotify = `https://open.spotify.com/artist/${components.link.spotifyURI}`
     } else {
-        spotify = `https://open.spotify.com/album/${components.links.spotifyURI}`
+        spotify = `https://open.spotify.com/album/${components.link.spotifyURI}`
     }
 
     // Build Out Tags
