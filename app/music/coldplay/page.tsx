@@ -3,7 +3,7 @@ import MusicDisplay from "@/components/ui/music-display";
 import PageTitle from "@/components/ui/page-title";
 
 // Import Content
-import content from "@/app/music/coldplay/content.json";
+import content from "@/api/static_content/albums.json";
 
 const title: { title: string; subtitle?: string; center?: boolean } = {
     title: "Coldplay Albums",
