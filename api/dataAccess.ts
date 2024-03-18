@@ -9,7 +9,7 @@ export enum DataType {
 }
 
 // API Endpoint
-const endpoint = "https://localhost:7156"
+const endpoint = "https://api.fisherandrew.org"
 
 // Load Static Data if API can't be accessed
 function getStaticData(type: DataType) {
@@ -38,7 +38,4 @@ export async function getData(type: DataType) {
 
         return getStaticData(type);
     }
-}
-
-
-
+};
