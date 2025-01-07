@@ -3,7 +3,7 @@ import { useState, useEffect, use } from 'react'
 // import Menu from '../ui/menu/menu';
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '@/public/core/js-logo.svg';
+import Logo from '@/public/core/jsMain-logo.svg';
 
 const links: { title: string; href: string; }[] = [
     {
@@ -30,12 +30,6 @@ export function CoreMenu() {
     };
     const toggleNavbar = () => {
         setNavIsOpened(navIsOpened => !navIsOpened);
-    };
-    
-    // Dropdown Control
-    const [isDropdownHovered, setIsDropdownHovered] = useState(false);
-    const handleMusicHover = (hovered: boolean) => {
-        setIsDropdownHovered(hovered);
     };
 
     useEffect(() => {
@@ -77,7 +71,6 @@ export function CoreMenu() {
     const LogoStyles: string = `${NavItemBasic} ${NavItemHover}    w-fit `;
     const NavItemSpacing: string = `px-4 py-2 w-full `;
     const NavItem: string = `${NavItemBasic} ${NavItemHover} ${NavItemSpacing}    `; //lg:w-fit
-    const DropdownItem: string = `${NavItemBasic} ${NavItemHover} ${NavItemSpacing} ` //lg:w-8/12
 
     return (
         <>
