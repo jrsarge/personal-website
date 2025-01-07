@@ -5,16 +5,12 @@ import Image from "next/image";
 import resume from "@/app/resume/resume.json"
 import PageTitle from "@/components/ui/page-title";
 
-const title: { title: string; subtitle?: string } = {
-    title: "Resume"
-}
 const jobs = resume.jobs;
 
 export default function ResumePage() {
 	return (
 		<main>
-			<PageTitle components={ title } />
-			<div className="container">
+			<div className="container mt-8">
 				<h1 className="text-left dark:text-white text-2xl md:text-3xl xl:text-4xl font-medium text-gray-900 w-10/12 p-5">
 					Education
 				</h1>
