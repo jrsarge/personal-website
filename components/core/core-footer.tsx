@@ -9,8 +9,8 @@ export default function CoreFooter() {
 	return (
 		<footer className="container mx-auto">
 			<Separator/>
-			<div className=" py-12 mx-auto overflow-hidden max-w-7xl ">
-				<p className="mt-8 text-center">
+			<div className="py-8 mx-auto overflow-hidden max-w-7xl ">
+				<p className="text-center">
 					<Link href="/" >
 						<Image src={ JSLogo } alt="JS" className="mx-auto" />
 					</Link>
