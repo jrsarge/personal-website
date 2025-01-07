@@ -3,7 +3,7 @@ import { useState, useEffect, use } from 'react'
 // import Menu from '../ui/menu/menu';
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '@/public/core/andrew-fisher-logo.svg';
+import Logo from '@/public/core/js-logo.svg';
 
 const links: { title: string; href: string; }[] = [
     {
@@ -11,33 +11,16 @@ const links: { title: string; href: string; }[] = [
         href: "/resume"
     },
     {
-        title: "Development",
-        href: "/development"
+        title: "Projects",
+        href: "/projects"
     },
     {
-        title: "Photography",
-        href: "/photo"
+        title: "Adventures",
+        href: "/adventures"
     },
-    {
-        title: "Food",
-        href: "/food"
-    }
 ]
 
-const musicLinks: { title: string; href: string; }[] = [
-    {
-        title: "Artists",
-        href: "/music/artists"
-    },
-    {
-        title: "Coldplay",
-        href: "/music/coldplay"
-    },
-    {
-        title: "Playlists",
-        href: "/music/playlists"
-    }
-]
+
 
 export function CoreMenu() {
     // Navmenu Controls
@@ -141,15 +124,6 @@ export function CoreMenu() {
                                             </svg>
                                         </button>
                                     </summary>
-                                    <div className='w-full lg:fixed '>
-                                        <ul className='flex flex-row gap-6 justify-center lg:gap-3 lg:flex-col lg:w-36 lg:bg-white lg:p-5 lg:border  lg:-translate-x-8 lg:translate-y-8 rounded-md '>
-                                            { musicLinks.map((link) => (
-                                                <li className='flex justify-center' key={ link.title }>
-                                                    <Link onClick={closeNavbar} href={ link.href } className={ `${ DropdownItem } lg:mx-auto` }>{ link.title }</Link>
-                                                </li>
-                                            )) }
-                                        </ul>
-                                    </div>
                                     
                                 </details>
                             </li>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import NotionPreview from "@/components/ui/notion-preview";
-import articles from "@/app/development/articles.json";
+
 import PageTitle from "@/components/ui/page-title";
 
 const title: { title: string; subtitle?: string } = {
@@ -17,9 +17,7 @@ export default function DevelopmentPage() {
 					Articles
 				</h1>
 				<div className="grid grid-cols-1 gap-12 mt-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 ">
-					{ articles.map((articles, index) => (
-						<NotionPreview key={ index } page={articles} />
-					)) }
+					Fill in later
 				</div>
 			</section>
 		</main>

@@ -8,8 +8,8 @@ import CoreFooter from "@/components/core/core-footer";
 const coreFont = Merriweather_Sans({ subsets: ["latin"] });
 
 export let metadata: Metadata = {
-  title: "Andrew Fisher",
-  description: "Created by Andrew Fisher",
+  title: "Jacob Sargent",
+  description: "Created by Jacob Sargent",
 };
 
 export default function RootLayout({
