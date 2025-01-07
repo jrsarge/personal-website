@@ -26,46 +26,73 @@
     ],
     "jobs": [
         {
-            "title": "Full-Stack Developer + Systems Manager",
-            "company": "Triark Roofing Co.",
-            "start_date": "04/2021",
+            "title": "Student Giving Manager",
+            "company": "Dean's Office, Marriott School of Business",
+            "start_date": "Sep 2024",
             "end_date": null,
-            "city": "Roseville",
-            "state": "CA",
-            "country": "USA",
-            "descriptions": [
-                "Designed and implemented a centralized email template management system using Python Django, optimizing the creation, updating, and deployment of over 40 email templates, resulting in increased productivity and consistency in client communication materials",
-                "Developing application to streamline roof data collection and automate inspection report generation, to reduce previous process duration by 75%",
-                "Manage CRM implementation, configuring automations, and providing continuous support, leading to streamlined data management and improved operational efficiency",
-                "Created customized training materials (including slideshows and activity diagrams) for various employee position groups, ensuring smooth onboarding and skill development while actively contributing to CRM troubleshooting and maintenance",
-                "Designed and launched company website while implementing a review campaign that substantially elevated the companies online reputation, boosting reviews from 3 to over 30"
-            ]
-        },
-        {
-            "title": "Team Lead, On-Campus Internship Team",
-            "company": "Philippines Collegiate Vocational Fund",
-            "start_date": "09/2021",
-            "end_date": "12/2021",
             "city": "Provo",
             "state": "UT",
             "country": "USA",
             "descriptions": [
-                "Led OCI team in planning, creation, and delivery of 2 inspirational/promotional videos, 2 sharable business models, and a redesign of the PCVF website",
-                "Conducted weekly team meetings, ensuring alignment on project objectives.  Proactively followed up with team members and promoted collaborative atmosphere through engaging team-building exercises",
-                "Coordinated expectations, progress, and implementation with PCVF management"
+                "WHAT: Assigned by the Assistant Dean responsible for managing relations with BYU's National Advisory Council (NAC) and overseeing donations to the School of Business to develop an improved system for tracking donations and enhancing donor recognition to encourage increased contributions.",
+                "HOW: Assisted in planning and executing multiple NAC events, including football tailgates and conferences. Developed a VBA script in Excel to clean and organize current and historic giving data consiting of 18,000+ donations made by 2,800+ individuals for seamless import into a new CRM chosen by the Assistant Dean. Configured the CRM to automatically generate quarterly reports based on various giving levels and distribute them to department heads.",
+                "IMPACT: Successfully developed a solution for importing data into the CRM within three weeks, far exceeding the performance of CRM consultants who spent an entire summer on a less effective approach. Enabled the college and department heads to gain unprecedented visibility into donor contributions and trends. Presented the results and outlined future expectations to the head of the School of Business, setting the stage for more informed decision-making and strategic donor engagement."
             ]
         },
         {
-            "title": "Volunteer Representative",
-            "company": "The Church of Jesus Christ of Latter-day Saints",
-            "start_date": "08/2018",
-            "end_date": "03/2020",
-            "city": "Cauayan",
-            "state": "Isabela",
-            "country": "Philippines",
+            "title": "Software Development Intern",
+            "company": "Restaurant365",
+            "start_date": "May 2024",
+            "end_date": "Aug 2024",
+            "city": "Remote",
+            "state": "",
+            "country": "USA",
             "descriptions": [
-                "Trained two new missionaries, including mentorship in: instruction in mission protocol, effective teaching and proselyting, and accountable goal setting",
-                "Improved statistic success by 250% while leading assigned area over 7 months through effective coordination with regional leadership, leading mission wide statistics"
+                "WHAT: Collaborated with a team of two other interns to design and develop an internal tool aimed at automating client setting updates, eliminating the need for manual intervention by the manager.",
+                "HOW: Leveraged the Blazor framework within C# to build a solution featuring CRUD (Create, Read, Update, Delete) operations, integrated with MongoDB and the company's internal API. Managed tasks and progress using JIRA and created comprehensive documentation.",
+                "MPACT: Delivered a live demonstration of the tool to the Development department heads at Restaurant365, who approved immediate implementation. The manager estimated a savings of approximately 72 hours of manual labor annually."
+            ]
+        },
+        {
+            "title": "Implementation Project Assistant",
+            "company": "Brigham Young University",
+            "start_date": "Jun 2023",
+            "end_date": "Apr 2024",
+            "city": "Provo",
+            "state": "UT",
+            "country": "USA",
+            "descriptions": [
+                "WHAT:",
+                "HOW:",
+                "IMPACT:"
+            ]
+        },
+        {
+            "title": "Information Systems Intern",
+            "company": "Haupt Electrical",
+            "start_date": "Nov 2022",
+            "end_date": "Apr 2024",
+            "city": "Springville",
+            "state": "UT",
+            "country": "USA",
+            "descriptions": [
+                "WHAT:",
+                "HOW:",
+                "IMPACT:"
+            ]
+        },
+        {
+            "title": "Shop Manager",
+            "company": "Jolly Circle Bike Shop",
+            "start_date": "Feb 2022",
+            "end_date": "Jan 2024",
+            "city": "Springville",
+            "state": "UT",
+            "country": "USA",
+            "descriptions": [
+                "WHAT:",
+                "HOW:",
+                "IMPACT:"
             ]
         }
     ],

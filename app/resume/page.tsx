@@ -81,5 +81,5 @@ export default function ResumePage() {
 
 
 export let metadata: Metadata = {
-    title: "My Resume"
+    title: "Resume"
 };
