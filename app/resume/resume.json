@@ -1,10 +1,10 @@
 {
     "user": {
         "id": 1,
-        "firstname": "Andrew",
-        "lastname": "Fisher",
-        "linkedin_url": "https://www.linkedin.com/in/fisherandrew777/",
-        "github_url": "https://github.com/fisherbyu"
+        "firstname": "Jacob",
+        "lastname": "Sargent",
+        "linkedin_url": "https://www.linkedin.com/in/jacobsargent/",
+        "github_url": "https://github.com/jrsarge"
     },
     "education": [
         {
@@ -14,11 +14,13 @@
             "state": "Utah",
             "college": "Marriott School of Business",
             "degree": "Master of Information Systems Managment",
-            "graduation_month": "April",
+            "start_month": "December",
+            "start_year": "2020",
+            "graduation_month": "December",
             "graduation_year": "2025",
             "gpa": "3.70",
             "additionals": [
-                "Specialized Courses: Python, C#, JavaScript, C++, Swift Web Publishing"
+                "Garrett Scholar 2024, VIA Award Scholarship Recipient 2024, ExxonMobil Scholarship Recipient 2023"
             ]
         }
     ],

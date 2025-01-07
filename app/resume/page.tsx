@@ -21,14 +21,16 @@ export default function ResumePage() {
 							<h1 className="text-xl font-semibold leading-none tracking-tight">
 								{ resume.education[0].institution }
 							</h1>
-							<p className="text-sm text-muted-foreground">{ resume.education[0].graduation_month } { resume.education[0].graduation_year } - { resume.education[0].city }, { resume.education[0].state }</p>
-							
+							<p className="text-sm text-muted-foreground">{ resume.education[0].start_month } { resume.education[0].start_year } - { resume.education[0].graduation_month } { resume.education[0].graduation_year }</p>
+							<p className="text-sm text-muted-foreground">{ resume.education[0].city }, { resume.education[0].state }</p>
+
 						</div>
 					</div>
 					<h2 className=" text-lg font-normal leading-none tracking-tight">
 						{ resume.education[0].degree }
 					</h2>
 					<p className="text-sm text-muted-foreground">{ resume.education[0].college }</p>
+					<br></br>
 					<p className=" pb-1" ><b>GPA:</b> { resume.education[0].gpa }</p>
 					<p className=" text-xs" >{ resume.education[0].additionals }</p>
 				</div>
