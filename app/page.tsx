@@ -88,7 +88,7 @@ function HeroBlock() {
     {/* Image block */}
     <div
       id="img-block"
-      className="relative mt-0 md:mt-0 lg:mt-0 lg:w-16/24"
+      className="relative mt-0 md:mt-0 lg:mt-0 lg:w-8/16"
     >
       <div className="relative w-full h-full">
         <Image
@@ -125,14 +125,11 @@ function HeroBlock() {
 export default function Home() {
     return (
         <main> 
-            <br />
             <HeroBlock />
+            <br></br>
+            <br></br>
+            <br></br>
             <Separator className="container w-9/12 my-9" />
-            <h1 className="container font-semibold md:py-6 lg:py-3 text-center text-3xl md:text-4xl xl:text-5xl">
-                About Me
-            </h1>
-            <GridBlock components={places} />
-            <GridBlock components={movies} />
         </main>
     );
 }
