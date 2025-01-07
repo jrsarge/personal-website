@@ -94,7 +94,7 @@ export function CoreMenu() {
                 <nav className=" container relative mx-auto w-full flex gap-x-5 justify-between lg:justify-start items-center">
                     <div className='flex items-center w-96 max-w-fit '>
                         <Link onClick={closeNavbar} href="/" passHref className={ LogoStyles }>
-                            <Image src={ Logo } alt='Andrew Fisher' className='cursor-pointer'/>
+                            <Image src={ Logo } alt='Jacob Sargent' className='cursor-pointer'/>
                         </Link>
                     </div>
                     <div className={`
@@ -108,25 +108,6 @@ export function CoreMenu() {
                                 <Link onClick={closeNavbar} href={ link.href } className={ NavItem }>{ link.title }</Link>
                             </li>
                             )) }
-                            <li className=""
-                                onMouseEnter={() => handleMusicHover(true)}
-                                onMouseLeave={() => handleMusicHover(false)}
-                            >
-                                
-                                <details className='list-none' open={isDropdownHovered}>
-                                    <summary>
-                                        <button className={`${ NavItem } ${isDropdownHovered ? 'bg-accent text-accent-foreground' : ''}`}>
-                                            Music 
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                                                className={` relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open] ${isDropdownHovered ? 'rotate-180' : ''}`}
-                                            >
-                                                <path d="m6 9 6 6 6-6"></path>
-                                            </svg>
-                                        </button>
-                                    </summary>
-                                    
-                                </details>
-                            </li>
                         </ul>
                     </div>
                     <div className="flex items-center lg:hidden">
