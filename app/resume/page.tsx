@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Separator } from "@/components/ui/separator"
 import BYULogo from "@/public/resume/byu-logo.png"
-// import R365Logo from ""
-// import WrkdayLogo from ""
-// import HauptLogo from ""
-// import JollyLogo from ""
+import R365Logo from "@/public/resume/r365-logo.png"
+import WrkdayLogo from "@/public/resume/workday-logo.png"
+import HauptLogo from "@/public/resume/haupt-logo.png"
+import JollyLogo from "@/public/resume/jolly-logo.png"
 import Image from "next/image";
 import resume from "@/app/resume/resume.json"
 import PageTitle from "@/components/ui/page-title";
@@ -20,7 +20,7 @@ export default function ResumePage() {
 				</h1>
 				<div className="p-5 rounded-lg border bg-card text-card-foreground shadow-sm w-full md:w-9/12 mx-auto max-w-[850px]" >
 					<div className="flex justify-start items-center space-x-2 pb-4" >
-						<Image src={ BYULogo } alt="Company Logo" className=" w-10" />
+						<Image src={ BYULogo } alt="BYU Logo" className=" w-10" />
 						<div>
 							<h1 className="text-xl font-semibold leading-none tracking-tight">
 								{ resume.education[0].institution }
@@ -47,7 +47,7 @@ export default function ResumePage() {
 					<div key={ job.title } className="p-5 rounded-lg border bg-card text-card-foreground shadow-sm w-full md:w-9/12 mx-auto max-w-[850px] mb-5" >
 						<div>
 							<div className="flex justify-start items-center space-x-2 pb-4" >
-								<Image src={ BYULogo } alt="Company Logo" className=" w-10" />
+								<Image src={ BYULogo } alt={'${job.company} Logo'} width={40} height={40} className="w-10" />
 								<h1 className="text-xl font-semibold leading-none tracking-tight">
 									{ job.title }
 								</h1>
