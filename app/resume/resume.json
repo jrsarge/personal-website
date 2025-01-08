@@ -28,6 +28,7 @@
         {
             "title": "Student Giving Manager",
             "company": "Dean's Office, Marriott School of Business",
+            "logo": "BYULogo",
             "start_date": "Sep 2024",
             "end_date": null,
             "city": "Provo",
@@ -42,48 +43,52 @@
         {
             "title": "Software Development Intern",
             "company": "Restaurant365",
+            "logo": "R365Logo",
             "start_date": "May 2024",
             "end_date": "Aug 2024",
             "city": "Remote",
-            "state": "",
-            "country": "USA",
+            "state": null,
+            "country": null,
             "descriptions": [
                 "WHAT: Collaborated with a team of two other interns to design and develop an internal tool aimed at automating client setting updates, eliminating the need for manual intervention by the manager.",
                 "HOW: Leveraged the Blazor framework within C# to build a solution featuring CRUD (Create, Read, Update, Delete) operations, integrated with MongoDB and the company's internal API. Managed tasks and progress using JIRA and created comprehensive documentation.",
-                "MPACT: Delivered a live demonstration of the tool to the Development department heads at Restaurant365, who approved immediate implementation. The manager estimated a savings of approximately 72 hours of manual labor annually."
+                "IMPACT: Delivered a live demonstration of the tool to the Development department heads at Restaurant365, who approved immediate implementation. The manager estimated a savings of approximately 72 hours of manual labor annually."
             ]
         },
         {
             "title": "Implementation Project Assistant",
             "company": "Brigham Young University",
+            "logo": "WrkdayLogo",
             "start_date": "Jun 2023",
             "end_date": "Apr 2024",
             "city": "Provo",
             "state": "UT",
             "country": "USA",
             "descriptions": [
-                "WHAT:",
-                "HOW:",
-                "IMPACT:"
+                "WHAT: Contributed to BYU's ERP transition to Workday by assisting the full-time employee responsible for Payroll, Time Tracking, and Benefits. Engaged in training sessions and cross-campus meetings to identify departmental needs and propose tailored solutions.",
+                "HOW: Managed, created, assigned, and tracked 1,000s of tickets in Microsoft DevOps to ensure efficient project progress. Designed custom Airtable tables to streamline daily operations and improve task tracking. Conducted QA testing on 300+ configurations in Workday to verify accuracy and alignment with organizational requirements. Recorded and documented complex payroll and time-tracking processes, providing clear guidance for end-users post-implementation.",
+                "IMPACT: Played a critical role in BYU's largest-ever project by ensuring effective communication across multiple teams. Facilitated timely and efficient meetings by identifying key action items and documenting them for follow-up. Streamlined payroll and time-tracking processes, improving efficiency and usability for end-users. Empowered staff across campus with customized solutions and thorough documentation, contributing to a seamless go-live experience and setting the foundation for long-term success with Workday."
             ]
         },
         {
             "title": "Information Systems Intern",
             "company": "Haupt Electrical",
+            "logo": "HauptLogo",
             "start_date": "Nov 2022",
             "end_date": "Apr 2024",
             "city": "Springville",
             "state": "UT",
             "country": "USA",
             "descriptions": [
-                "WHAT:",
-                "HOW:",
-                "IMPACT:"
+                "WHAT: Collaborated with the CIO to identify company needs and redesign existing solutions. Addressed a critical issue where employee wellness surveys, performance reports, and time clock data collected weekly lacked an efficient system for centralized analysis and trend visualization over time.",
+                "HOW: Developed custom Google Apps Scripts to clean, organize, and visualize 1,000s of lines of employee data. The scripts ran on a weekly schedule, generating a dashboard shared with company executives. The dashboard highlighted key items requiring attention and automatically sent brief summaries to executives via email and Google Chats using webhooks.",
+                "IMPACT: Delivered a streamlined and automated solution that transformed how employee wellness, performance, and time clock data were managed and analyzed. The new system provided executives with actionable insights through a dynamic dashboard, enabling timely decision-making and improving oversight. Automated weekly reporting saved significant time and ensured critical issues were identified and addressed promptly, enhancing operational efficiency and employee management."
             ]
         },
         {
             "title": "Shop Manager",
             "company": "Jolly Circle Bike Shop",
+            "logo": "JollyLogo",
             "start_date": "Feb 2022",
             "end_date": "Jan 2024",
             "city": "Springville",
