@@ -20,7 +20,7 @@
             "graduation_year": "2025",
             "gpa": "3.70",
             "additionals": [
-                "Garrett Scholar 2024, VIA Award Scholarship Recipient 2024, ExxonMobil Scholarship Recipient 2023"
+                "Garrett Scholar 2024, MISM Student Scholarhip Recipient 2024, VIA Award Scholarship Recipient 2024, ExxonMobil Scholarship Recipient 2023"
             ]
         }
     ],
@@ -28,7 +28,7 @@
         {
             "title": "Student Giving Manager",
             "company": "Dean's Office, Marriott School of Business",
-            "logo": "BYULogo",
+            "logo": "/resume/byu-logo.png",
             "start_date": "Sep 2024",
             "end_date": null,
             "city": "Provo",
@@ -43,7 +43,7 @@
         {
             "title": "Software Development Intern",
             "company": "Restaurant365",
-            "logo": "R365Logo",
+            "logo": "/resume/r365-logo.png",
             "start_date": "May 2024",
             "end_date": "Aug 2024",
             "city": "Remote",
@@ -56,9 +56,9 @@
             ]
         },
         {
-            "title": "Implementation Project Assistant",
+            "title": " Workday Implementation Assistant",
             "company": "Brigham Young University",
-            "logo": "WrkdayLogo",
+            "logo": "/resume/workday-logo.png",
             "start_date": "Jun 2023",
             "end_date": "Apr 2024",
             "city": "Provo",
@@ -73,7 +73,7 @@
         {
             "title": "Information Systems Intern",
             "company": "Haupt Electrical",
-            "logo": "HauptLogo",
+            "logo": "/resume/haupt-logo.png",
             "start_date": "Nov 2022",
             "end_date": "Apr 2024",
             "city": "Springville",
@@ -88,7 +88,7 @@
         {
             "title": "Shop Manager",
             "company": "Jolly Circle Bike Shop",
-            "logo": "JollyLogo",
+            "logo": "/resume/jolly-logo.png",
             "start_date": "Feb 2022",
             "end_date": "Jan 2024",
             "city": "Springville",

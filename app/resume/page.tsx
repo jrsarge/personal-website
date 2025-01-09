@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import { Separator } from "@/components/ui/separator"
 import BYULogo from "@/public/resume/byu-logo.png"
-import R365Logo from "@/public/resume/r365-logo.png"
-import WrkdayLogo from "@/public/resume/workday-logo.png"
-import HauptLogo from "@/public/resume/haupt-logo.png"
-import JollyLogo from "@/public/resume/jolly-logo.png"
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import resume from "@/app/resume/resume.json"
 import PageTitle from "@/components/ui/page-title";
 
 const jobs = resume.jobs;
+
 
 export default function ResumePage() {
 	return (
@@ -20,7 +17,7 @@ export default function ResumePage() {
 				</h1>
 				<div className="p-5 rounded-lg border bg-card text-card-foreground shadow-sm w-full md:w-9/12 mx-auto max-w-[850px]" >
 					<div className="flex justify-start items-center space-x-2 pb-4" >
-						<Image src={ BYULogo } alt="BYU Logo" className=" w-10" />
+						<Image src={ BYULogo } alt="BYU Logo" className=" w-12" />
 						<div>
 							<h1 className="text-xl font-semibold leading-none tracking-tight">
 								{ resume.education[0].institution }
@@ -47,7 +44,7 @@ export default function ResumePage() {
 					<div key={ job.title } className="p-5 rounded-lg border bg-card text-card-foreground shadow-sm w-full md:w-9/12 mx-auto max-w-[850px] mb-5" >
 						<div>
 							<div className="flex justify-start items-center space-x-2 pb-4" >
-								<Image src={ BYULogo } alt={'${job.company} Logo'} width={40} height={40} className="w-10" />
+							<Image src={ job.logo } alt={`${job.company} Logo`} width={40} height={40} className="w-12" />
 								<h1 className="text-xl font-semibold leading-none tracking-tight">
 									{ job.title }
 								</h1>
@@ -55,7 +52,7 @@ export default function ResumePage() {
 							<Separator className="my-2" />
 							<p className=" font-normal text-base">{ job.company }</p>
 							<p className="text-sm text-muted-foreground">{ job.start_date } - {job.end_date !== null ? (job.end_date) : ("Present")}</p>
-							<p className="text-sm text-muted-foreground">{ job.city }, { job.state } { job.country !== "USA" ? (`- ${job.country}`) : ("") }</p>
+							<p className="text-sm text-muted-foreground">{ job.city }{ job.state !== null ? (`, ${job.state}`) : ( "" ) } </p>
 						</div>
 						<br></br>
 						<ul className="list-disc pl-5 space-y-4">
