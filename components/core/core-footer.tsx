@@ -2,7 +2,7 @@ import Image from "next/image";
 import GitHubIcon from "@/public/core/github.svg"
 import LinkedInIcon from "@/public/core/linkedin.svg"
 import { Separator } from "@/components/ui/separator"
-import JSLogo from "@/public/core/js-logo.jpg"
+import JSLogo from "@/public/core/js-logo.png"
 import Link from "next/link";
 
 export default function CoreFooter() {

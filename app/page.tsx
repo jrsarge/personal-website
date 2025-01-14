@@ -2,13 +2,6 @@
 // Import Images
 import Image, { StaticImageData } from "next/image";
 import dcpeaks from "@/public/home/dcpeaks.jpg";
-import Folsom from "@/public/home/folsom.jpg";
-import LaLaLand from "@/public/home/movies/lalaland.jpg";
-import WalterMitty from "@/public/home/movies/waltermitty.jpg"
-import SpiderMan from "@/public/home/movies/spiderman.jpg";
-import Utah from "@/public/home/alpine-loop.jpg";
-import HBLL from "@/public/home/hbll.jpg";
-import Philippines from "@/public/home/philippines.jpg";
 // Import Components
 import { Separator } from "@/components/ui/separator";
 import GridBlock from "@/components/ui/grid-block";

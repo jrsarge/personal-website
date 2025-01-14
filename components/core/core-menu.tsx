@@ -10,14 +10,14 @@ const links: { title: string; href: string; }[] = [
         title: "Resume",
         href: "/resume"
     },
-    {
-        title: "Projects",
-        href: "/projects"
-    },
-    {
-        title: "Adventures",
-        href: "/adventures"
-    },
+    // {
+    //     title: "Projects",
+    //     href: "/projects"
+    // },
+    // {
+    //     title: "Adventures",
+    //     href: "/adventures"
+    // },
 ]
 
 
