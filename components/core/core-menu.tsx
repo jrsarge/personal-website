@@ -12,10 +12,6 @@ const links: { title: string; href: string; }[] = [
         title: "Projects",
         href: "/projects"
     },
-    {
-        title: "About Me",
-        href: "/about"
-    },
     // {
     //     title: "Adventures",
     //     href: "/adventures"
