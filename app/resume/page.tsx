@@ -15,7 +15,7 @@ export default function ResumePage() {
 				<h1 className="text-left dark:text-white text-2xl md:text-3xl xl:text-4xl font-medium text-gray-900 w-10/12 p-5">
 					Education
 				</h1>
-				<div className="p-5 rounded-lg border bg-card text-card-foreground shadow-sm w-full md:w-9/12 mx-auto max-w-[850px]" >
+				<div className="p-6 rounded-xl border-0 bg-white dark:bg-gray-800 text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300 w-full md:w-9/12 mx-auto max-w-[850px] ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-blue-300 dark:hover:ring-blue-500 hover:scale-[1.02]" >
 					<div className="flex justify-start items-center space-x-2 pb-4" >
 						<Image src={ BYULogo } alt="BYU Logo" className=" w-12" />
 						<div>
@@ -41,7 +41,7 @@ export default function ResumePage() {
 					Experience
 				</h1>
 				{ resume.jobs.map((job) => (
-					<div key={ job.title } className="p-5 rounded-lg border bg-card text-card-foreground shadow-sm w-full md:w-9/12 mx-auto max-w-[850px] mb-5" >
+					<div key={ job.title } className="p-6 rounded-xl border-0 bg-white dark:bg-gray-800 text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300 w-full md:w-9/12 mx-auto max-w-[850px] mb-6 ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-blue-300 dark:hover:ring-blue-500 hover:scale-[1.02]" >
 						<div>
 							<div className="flex justify-start items-center space-x-2 pb-4" >
 							<Image src={ job.logo } alt={`${job.company} Logo`} width={40} height={40} className="w-12" />
@@ -75,7 +75,7 @@ export default function ResumePage() {
 				<h1 className="text-left dark:text-white text-2xl md:text-3xl xl:text-4xl font-medium text-gray-900 w-10/12 p-5">
 					Skills & Achievements                                     
 				</h1>
-				<div className="p-5 rounded-lg border bg-card text-card-foreground shadow-sm w-full md:w-9/12 mb-5 mx-auto max-w-[850px]" >
+				<div className="p-6 rounded-xl border-0 bg-white dark:bg-gray-800 text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300 w-full md:w-9/12 mb-6 mx-auto max-w-[850px] ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-blue-300 dark:hover:ring-blue-500 hover:scale-[1.02]" >
 					<ul className="list-disc pl-5">
 						{ resume.skills.map((skill, index) => (
 						<li key={ index } className=" font-light" >{ skill }</li>
