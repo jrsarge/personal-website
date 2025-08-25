@@ -1,49 +1,46 @@
-"use client"
-// Import Images
-import Image, { StaticImageData } from "next/image";
-import dcpeaks from "@/public/home/dcpeaks.jpg";
 // Import Components
-import { Separator } from "@/components/ui/separator";
-import GridBlock from "@/components/ui/grid-block";
+import Link from "next/link";
 
 // Hero Header
 function HeroBlock() {
     return (
-        <section className="relative w-full h-screen">
-  <div className="flex flex-col lg:flex-row justify-center items-stretch">
-    {/* Image block */}
-    <div
-      id="img-block"
-      className="relative mt-0 md:mt-0 lg:mt-0 lg:w-8/16"
-    >
-      <div className="relative w-full h-full">
-        <Image
-          src={dcpeaks}
-          alt="Picture of Jacob Sargent"
-          className="w-full h-full relative hidden lg:block rounded"
-        />
-      </div>
-    </div>
-
-    {/* Text block */}
-    <div
-        id="text-block"
-        className="absolute inset-0 flex flex-col justify-start items-end text-right p-6 md:p-16 bg-black bg-opacity-0 text-white inline-block"
-    >
-        <h1 className="text-4xl md:text-5xl xl:text-9xl font-semibold">
-            Who is he?
-        </h1>
-        <p className="mt-2 lg:mt-7 text-base leading-normal">
-            Master of Information Systems Student at BYU. <br></br>
-            Winner of multiple national competitons for Information Systems.<br></br>
-            Multi-Ultra Trail Marathon finisher.<br></br>
-            Loyal friend, husband and a true people person.<br></br>
-            <br></br>
-            Welcome to the site.
-        </p>
-    </div>
-  </div>
-</section>
+        <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <div className="container mx-auto px-6 text-center">
+                <div className="max-w-4xl mx-auto">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+                        Jacob Sargent
+                    </h1>
+                    <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-light">
+                        Master of Information Systems Student & Software Developer
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                        <div className="bg-white dark:bg-gray-800 px-6 py-3 rounded-full shadow-md">
+                            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">🎓 BYU Graduate Student</span>
+                        </div>
+                        <div className="bg-white dark:bg-gray-800 px-6 py-3 rounded-full shadow-md">
+                            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">🏆 National Competition Winner</span>
+                        </div>
+                        <div className="bg-white dark:bg-gray-800 px-6 py-3 rounded-full shadow-md">
+                            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">💻 Full-Stack Developer</span>
+                        </div>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link 
+                            href="/resume" 
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg"
+                        >
+                            View Resume
+                        </Link>
+                        <Link 
+                            href="/projects" 
+                            className="border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+                        >
+                            View Projects
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }
 
@@ -52,12 +49,6 @@ export default function Home() {
     return (
         <main> 
             <HeroBlock />
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Separator className="container w-9/12 my-9" />
         </main>
     );
 }
