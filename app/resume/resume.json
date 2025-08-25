@@ -11,7 +11,7 @@
             "id": 1,
             "institution": "Brigham Young University",
             "city": "Provo",
-            "state": "Utah",
+            "state": "UT",
             "college": "Marriott School of Business",
             "degree": "Master of Information Systems Managment",
             "start_month": "December",
@@ -26,8 +26,23 @@
     ],
     "jobs": [
         {
-            "title": "Student Giving Manager",
-            "company": "Dean's Office, Marriott School of Business",
+            "title": "AI Product Management Intern",
+            "company": "KLAS Research",
+            "logo": "/resume/klas-logo.png",
+            "start_date": "Jun 2025",
+            "end_date": "Aug 2025",
+            "city": "Pleasant Grove",
+            "state": "UT",
+            "country": "USA",
+            "descriptions": [
+                "WHAT: Implemented AI-driven solutions to enhance KLAS Research's healthcare IT market analysis and reporting capabilities. Focused on leveraging AI to validate quality of contacts, generate leads from publicly available information, and streamline report generation.",
+                "HOW: Created a custom AI ReAct Agent using LangGraph to automate lead generation utilizing web scraping and natural language processing to identify potential clients from industry news, social media, and company websites. Developed a AI workflow for the validation of contact information using OpenAI's API by using web search to find information on each contact to either support or disprove the claim that they should be considered a valid contact. Designed an AI-powered report generation system through the OpenAI API that synthesized research call transcripts into a templated HTML report including graphs.",
+                "IMPACT: Introduced a new capability to the company with AI lead generation. Saved 9,800+ hours of manual labor and $175K annually by automating the contact validation process, significantly improving data accuracy and reliability. Enhanced report generation efficiency by 75% (2 days)."
+            ]
+        },
+        {
+            "title": "Data Manager",
+            "company": "Marriott School of Business",
             "logo": "/resume/byu-logo.png",
             "start_date": "Sep 2024",
             "end_date": null,
@@ -56,7 +71,7 @@
             ]
         },
         {
-            "title": " Workday Implementation Assistant",
+            "title": "Project Manager",
             "company": "Brigham Young University",
             "logo": "/resume/workday-logo.png",
             "start_date": "Jun 2023",
@@ -102,13 +117,13 @@
         }
     ],
     "skills": [
-        "Proficient in JavaScript, Python, C#, ASP.NET Core, Blazor SQL, HTML5, CSS",
+        "Proficient in JavaScript, Python, LangGraph, C#, ASP.NET Core, Blazor SQL, HTML5, CSS",
         "Experienced with Django, Node.js, Bootstrap, VBA, Google App Script, R, Swift, AWS",
-        "Trail Ultra Marathon Finisher x3, Marathon Finisher x2",
+        "Trail Ultra Marathon Finisher x4, Marathon Finisher x2",
         "1st Place Purdue Data4Good Competiton 2023",
         "1st Place BYU Religious Diversity Case Competition 2023",
         "2nd Place National AIS AI Competition 2024",
-        "Fluent Spanish",
+        "Fluent Spanish, Lived in Panama for 2 years after high school",
         "Eagle Scout"
     ]
 }
