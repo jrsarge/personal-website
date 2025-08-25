@@ -3,7 +3,6 @@ import { Merriweather_Sans } from "next/font/google";
 import "@/styles/globals.css";
 
 import { CoreMenu } from "@/components/core/core-menu";
-import CoreFooter from "@/components/core/core-footer";
 
 const coreFont = Merriweather_Sans({ subsets: ["latin"] });
 
@@ -22,7 +21,6 @@ export default function RootLayout({
       <body className={coreFont.className}>
         <CoreMenu />
         {children}
-        <CoreFooter />
       </body>
     </html>
   );
