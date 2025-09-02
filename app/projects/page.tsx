@@ -22,7 +22,7 @@ export default function DevelopmentPage() {
 			<section className="container">
 				<div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 					{projects.map((project, index) => (
-						<div key={index} className="p-6 rounded-xl border-0 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300 ring-1 ring-green-200 dark:ring-green-700 hover:ring-green-400 dark:hover:ring-green-500 hover:scale-[1.02] border-l-4 border-l-green-500">
+						<div key={index} className="p-6 rounded-xl border-0 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300 ring-1 ring-amber-200 dark:ring-amber-700 hover:ring-amber-400 dark:hover:ring-amber-500 hover:scale-[1.02] border-l-4 border-l-amber-500">
 							<div className="mb-4">
 								<div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
 									<Image 
@@ -43,7 +43,7 @@ export default function DevelopmentPage() {
 									href={project.link} 
 									target="_blank" 
 									rel="noopener noreferrer"
-									className="inline-flex items-center text-sm font-medium text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 transition-colors"
+									className="inline-flex items-center text-sm font-medium text-amber-600 hover:text-amber-700 dark:text-amber-400 dark:hover:text-amber-300 transition-colors"
 								>
 									Visit Project
 									<svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
