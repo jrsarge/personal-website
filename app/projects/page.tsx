@@ -6,7 +6,7 @@ const projects = [
 		title: "bonk.ai",
 		description: "A webapp where people can have AI-generated running plans made based off their running data in their Strava, which it gets through the Strava API.",
 		link: "https://bonk-ai.vercel.app/",
-		image: "/projects/bonk-ai.png"
+		image: "/projects/bonk.ai-image.png"
 	}
 ];
 
@@ -14,15 +14,18 @@ export default function DevelopmentPage() {
 	return (
 		<main>
 			<section className="container">
-				<h1 className="text-left dark:text-white text-2xl md:text-3xl xl:text-4xl font-medium text-gray-900 w-10/12 p-5">
-					Projects
-				</h1>
 				<div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 					{projects.map((project, index) => (
 						<div key={index} className="p-6 rounded-xl border-0 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-700/50 text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300 ring-1 ring-gray-200 dark:ring-gray-600 hover:ring-gray-400 dark:hover:ring-gray-500 hover:scale-[1.02] border-l-4 border-l-gray-400">
 							<div className="mb-4">
-								<div className="w-full h-48 bg-gray-200 dark:bg-gray-700 rounded-lg mb-4 flex items-center justify-center">
-									<span className="text-gray-500 dark:text-gray-400">Project Image</span>
+								<div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+									<Image 
+										src={project.image} 
+										alt={`${project.title} screenshot`}
+										width={400}
+										height={192}
+										className="w-full h-full object-cover"
+									/>
 								</div>
 								<h3 className="text-xl font-semibold leading-none tracking-tight text-gray-900 dark:text-white mb-2">
 									{project.title}
