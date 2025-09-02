@@ -7,6 +7,12 @@ const projects = [
 		description: "A webapp where people can have AI-generated running plans made based off their running data in their Strava, which it gets through the Strava API.",
 		link: "https://bonk-ai.vercel.app/",
 		image: "/projects/bonk.ai-image.png"
+	},
+	{
+		title: "myverifi",
+		description: "A blockchain application for sending and recieving credentials. Created for a capstone project as part of the BYU Masters of Information Systems program.",
+		link: "https://youtu.be/FMsGAZ19zZk",
+		image: "/projects/myverifi.png"
 	}
 ];
 
