@@ -4,7 +4,7 @@ import Image from "next/image";
 const projects = [
 	{
 		title: "bonk.ai",
-		description: "A webapp where people can have AI-generated running plans made based off their running data in their Strava, which it gets through the Strava API.",
+		description: "bonk.ai is a web app that uses AI to create a customized race training plan for runners. Originally made to connect with a user's Strava to create an even more personalized plan. Unfortunately the Strava API does not allow more than one user to be connected to this kind of application so attatched is a video showcasing Strava functionality.",
 		link: "https://bonk-ai.vercel.app/",
 		image: "/projects/bonk.ai-image.png"
 	},
