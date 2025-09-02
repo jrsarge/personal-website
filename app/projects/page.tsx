@@ -119,7 +119,3 @@ export default function DevelopmentPage() {
 		</main>
 	);
 }
-
-export let metadata: Metadata = {
-    title: "My Development Projects"
-};
