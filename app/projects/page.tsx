@@ -20,6 +20,14 @@ export default function DevelopmentPage() {
 	return (
 		<main>
 			<section className="container">
+				<div className="text-center mb-12 mt-8">
+					<h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+						My Projects
+					</h1>
+					<p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+						A collection of applications and projects I've built to explore new technologies and solve real-world problems.
+					</p>
+				</div>
 				<div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 					{projects.map((project, index) => (
 						<div key={index} className="p-6 rounded-xl border-0 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 text-card-foreground shadow-lg hover:shadow-xl transition-all duration-300 ring-1 ring-amber-200 dark:ring-amber-700 hover:ring-amber-400 dark:hover:ring-amber-500 hover:scale-[1.02] border-l-4 border-l-amber-500">
