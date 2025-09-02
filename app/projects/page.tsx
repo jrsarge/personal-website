@@ -1,22 +1,36 @@
+"use client"
 import type { Metadata } from "next";
 import Image from "next/image";
+import { useState } from "react";
 
 const projects = [
 	{
 		title: "bonk.ai",
-		description: "bonk.ai is a web app that uses AI to create a customized race training plan for runners. Originally made to connect with a user's Strava to create an even more personalized plan. Unfortunately the Strava API does not allow more than one user to be connected to this kind of application so attatched is a video showcasing Strava functionality.",
+		shortDescription: "AI-powered customized race training plans for runners.",
+		fullDescription: "bonk.ai is a web app that uses AI to create a customized race training plan for runners. Originally made to connect with a user's Strava to create an even more personalized plan. Unfortunately the Strava API does not allow more than one user to be connected to this kind of application so attached is a video showcasing Strava functionality.",
 		link: "https://bonk-ai.vercel.app/",
 		image: "/projects/bonk.ai-image.png"
 	},
 	{
 		title: "myverifi",
-		description: "A blockchain application for sending and recieving credentials. Created for a capstone project as part of the BYU Masters of Information Systems program.",
+		shortDescription: "Blockchain application for credential management.",
+		fullDescription: "A blockchain application for sending and receiving credentials. Created for a capstone project as part of the BYU Masters of Information Systems program. This project demonstrates the use of blockchain technology for secure credential verification and management.",
 		link: "https://youtu.be/FMsGAZ19zZk",
 		image: "/projects/myverifi.png"
 	}
 ];
 
 export default function DevelopmentPage() {
+	const [selectedProject, setSelectedProject] = useState<number | null>(null);
+
+	const openModal = (index: number) => {
+		setSelectedProject(index);
+	};
+
+	const closeModal = () => {
+		setSelectedProject(null);
+	};
+
 	return (
 		<main>
 			<section className="container">
@@ -45,24 +59,63 @@ export default function DevelopmentPage() {
 									{project.title}
 								</h3>
 								<p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-									{project.description}
+									{project.shortDescription}
 								</p>
-								<a 
-									href={project.link} 
-									target="_blank" 
-									rel="noopener noreferrer"
-									className="inline-flex items-center text-sm font-medium text-amber-600 hover:text-amber-700 dark:text-amber-400 dark:hover:text-amber-300 transition-colors"
+								<button 
+									onClick={() => openModal(index)}
+									className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600 rounded-lg transition-colors"
 								>
-									Visit Project
-									<svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-									</svg>
-								</a>
+									Learn More
+								</button>
 							</div>
 						</div>
 					))}
 				</div>
 			</section>
+
+			{/* Modal */}
+			{selectedProject !== null && (
+				<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+					<div className="bg-white dark:bg-gray-800 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
+						<button
+							onClick={closeModal}
+							className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+						>
+							<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+						<div className="p-8">
+							<div className="w-full h-64 rounded-lg mb-6 overflow-hidden">
+								<Image 
+									src={projects[selectedProject].image} 
+									alt={`${projects[selectedProject].title} screenshot`}
+									width={600}
+									height={256}
+									className="w-full h-full object-cover"
+								/>
+							</div>
+							<h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+								{projects[selectedProject].title}
+							</h2>
+							<p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+								{projects[selectedProject].fullDescription}
+							</p>
+							<a 
+								href={projects[selectedProject].link} 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-amber-600 hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600 rounded-lg transition-colors"
+							>
+								Visit Project
+								<svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			)}
 		</main>
 	);
 }
