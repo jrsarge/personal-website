@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Merriweather_Sans } from "next/font/google";
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 import { CoreMenu } from "@/components/core/core-menu";
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={coreFont.className}>
         <CoreMenu />
         {children}
+        <Analytics />
       </body>
     </html>
   );
